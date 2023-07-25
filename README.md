@@ -39,7 +39,7 @@ Below are lists of the required tasks to achieve the oblectives:
 
 15 - All the above options work well together.
 
-This function works just like the standard printf.
+This function works just like the standard printf function.
 ~~~
 ______________________________________________________________________________________________________________________________________________________________________
 
