@@ -20,5 +20,6 @@ void print_mod_i(int n);
 int convert_to_binary(unsigned int num);
 int octal_conversion(unsigned int num);
 int hexadecimal_lw_case_conversion(unsigned int num);
+int hex_cap_conversion(unsigned int num);
 #endif
 

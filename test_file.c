@@ -10,6 +10,6 @@ int main(void)
 	print_chars('\n');
 	octal_conversion(68);
 	print_chars('\n');
-	hexadecimal_lw_case_conversion(6934);
+	hex_cap_conversion(6934);
 	return (0);
 }
