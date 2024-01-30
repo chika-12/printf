@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_exc_string - prints exclusive string
+ * @val: argument
+ * Return: len
+ */
 int print_exc_string(va_list val)
 {
 	char *s;
@@ -25,4 +30,11 @@ int print_exc_string(va_list val)
 			}
 			len = len + print_Hex_extra(value);
 		}
+		else
+		{
+			_putchar(s[i]);
+			len++;
+		}
 	}
+	return (len);
+}

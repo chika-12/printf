@@ -8,6 +8,12 @@
 #include <unistd.h> 
 #include <stdint.h>
 #include <string.h>
+typedef struct format
+{
+	char *id;
+	int (*f)();
+}match;
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_chars(int val);
@@ -18,8 +24,14 @@ void print_number(int n);
 int print_unsigned_int(unsigned int n);
 void print_mod_i(int n);
 int convert_to_binary(unsigned int num);
-int octal_conversion(unsigned int num);
-int hexadecimal_lw_case_conversion(unsigned int num);
-int hex_cap_conversion(unsigned int num);
+int octal_conversion(unsigned int num);/*va_list*/
+int hexadecimal_lw_case_conversion(unsigned int num);/*va_lisy*/
+int hex_cap_conversion(unsigned int num);/* change this to va_list*/
+int print_Hex_extra(unsigned int num);/* No va_list*/
+int print_exc_string(va_list val);
+int print_hex_extra(unsigned long int num);/*No va_list*/
+int print_pointer(va_list val);
+int print_reverse(va_list val);
+int print_rot13(va_list val);
 #endif
 
