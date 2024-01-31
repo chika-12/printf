@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * rot13 - Encodes strings using the rot13 encription code
+ * print_rot13 - Encodes strings using the rot13 encription code
  *
- * @str: string to be encoded
+ * @val: string to be encoded
  *
  * Return: char
  */

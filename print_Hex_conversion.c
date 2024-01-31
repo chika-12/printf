@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * hex_cap_conversion - converts number to hexadecimal number
+ * print_Hex_extra - converts number to hexadecimal number
  * @num: argument
  * Return: integer
  */

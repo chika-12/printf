@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * hexadecimal_lw_case_conversion - converts number to hexadecimal number
+ * print_hex_extra - converts number to hexadecimal number
  * @num: argument
  * Return: integer
  */
