@@ -6,15 +6,16 @@
  *
  * Return: 0
  */
-int print_string(char *str)
+int print_string(va_list str)
 {
 	int length;
+	char *val = va_arg(str, char*);
 
-	length = _strlen(str);
-	while (*str != '\0')
+	length = _strlen(val);
+	while (*val != '\0')
 	{
-		_putchar(*str);
-		str++;
+		_putchar(*val);
+		val++;
 	}
 	_putchar(10);
 	return (length);

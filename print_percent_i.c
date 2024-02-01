@@ -5,9 +5,10 @@
  * @n: parameter to function
  * Return: void
  */
-void print_mod_i(int n)
+int print_mod_i(va_list val)
 {
-	unsigned int new_num;
+	int new_num;
+	int n = va_arg(val, int);
 
 	if (n < 0)
 	{
@@ -23,4 +24,5 @@ void print_mod_i(int n)
 		print_number(new_num / 10);
 	}
 	_putchar((new_num % 10) + 48);
+	return (1);
 }

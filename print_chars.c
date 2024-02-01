@@ -4,8 +4,9 @@
  * @val: arguments
  * Return: 1
  */
-int print_chars(int val)
+int print_chars(va_list val)
 {
-	_putchar(val);
+	int num = va_arg(val, int);
+	_putchar(num);
 	return (1);
 }

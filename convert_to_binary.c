@@ -5,16 +5,34 @@
  * @num: argument
  * Return: integer
  */
-int convert_to_binary(unsigned int num)
+int convert_to_binary(va_list num)
 {
-	unsigned int n;
+	int index, count = 0, tmp;
+	int *arr = NULL;
+	int val = va_arg(num, int);
 
-	if (num > 1)
+	tmp = val;
+
+	while (val / 2 != 0)
 	{
-		convert_to_binary(num / 2);
+		val = val / 2;
+		count = count + 1;
 	}
-	n = num % 2;
-	print_unsigned_int(n);
+	arr = malloc(sizeof(int) * (count + 1));
+	if (arr == NULL)
+	{
+		return (0);
+	}
+	for (index = 0; index < count; index++)
+	{
+		arr[index] = tmp % 2;
+		tmp = tmp / 2;
+	}
+	for (index = count; index >= 0; index--)
+	{
+		_putchar(arr[index] + 48);
+	}
+	free(arr);
 	return (1);
 }
 

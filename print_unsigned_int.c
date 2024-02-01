@@ -5,9 +5,10 @@
  * @n: parameter to function
  * Return: void
  */
-int print_unsigned_int(unsigned int n)
+int print_unsigned_int(va_list val)
 {
 	unsigned int new_num;
+	unsigned int n = va_arg(val, unsigned int);
 
 	new_num = n;
 	if (new_num / 10)

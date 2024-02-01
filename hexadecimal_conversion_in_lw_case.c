@@ -4,10 +4,11 @@
  * @num: argument
  * Return: integer
  */
-int hexadecimal_lw_case_conversion(unsigned int num)
+int hexadecimal_lw_case_conversion(va_list val)
 {
 	int count = 0, index, tmp;
 	int *arr = NULL;
+	int num = va_arg(val, int);
 
 	tmp = num;
 
